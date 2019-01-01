@@ -12,30 +12,14 @@
 	<artifactId>wiseconnect</artifactId>
 	<name>wiseconnect</name>
 	<description>Wiseconnect</description>
-
+	
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-redis</artifactId>
+	   <dependency>
+			<groupId>com.wisilica</groupId>
+			<artifactId>wiseconnectCore</artifactId>
+			<version>${project.version}</version>
 		</dependency>
-
-		<dependency>
-			<groupId>redis.clients</groupId>
-			<artifactId>jedis</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>com.mchange</groupId>
-			<artifactId>c3p0</artifactId>
-			<version>0.9.5.2</version>
-		</dependency>
-	</dependencies>
+	</dependencies>	
 
 	<build>
 		<plugins>

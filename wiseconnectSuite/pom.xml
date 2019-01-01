@@ -8,8 +8,8 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.1.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>	
+		<relativePath />
+	</parent>
 
 	<groupId>com.wisilica</groupId>
 	<artifactId>wiseconnectSuite</artifactId>
@@ -19,12 +19,17 @@
 	<name>WiseconnectSuite</name>
 
 	<properties>
+	    <start-class>com.wisilica.wiseconnect.WiseconnectApplication</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>10</java.version>
 	</properties>
 
 	<modules>
+		<module>wiseconnectModel</module>
+		<module>wiseconnectUtil</module>
+		<module>wiseconnectDao</module>
+		<module>wiseconnectCore</module>
 		<module>wiseconnect</module>
 	</modules>
 
@@ -38,15 +43,15 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-jdbc</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.tomcat</groupId>
+					<artifactId>tomcat-jdbc</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
