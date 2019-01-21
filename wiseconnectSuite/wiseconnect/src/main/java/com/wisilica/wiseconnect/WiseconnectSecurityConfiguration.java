@@ -12,6 +12,6 @@ public class WiseconnectSecurityConfiguration extends WebSecurityConfigurerAdapt
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/public/").permitAll();
-		http.cors().and().csrf().disable();
+		//http.cors().and().csrf().disable();
 	}
 }
